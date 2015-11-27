@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="node_modules/anicollection/dist/anicollection.css">
+    <link rel="stylesheet" href="public/uncompresed/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="item1" class="lfx-square-item" data-anijs="if: touchstart, do: fadeInUp animated lfx-ani-duration-500-ms lfx-ani-delay-300-ms"></div>
+    <div id="item2" class="lfx-square-item" data-anijs="if: animationstart, on: #item1, do: fadeInUp animated lfx-ani-duration-500-ms lfx-ani-delay-300-ms"></div>
+    <div id="item3" class="lfx-square-item" data-anijs="if: animationstart, on: #item1, do: fadeInUp animated lfx-ani-duration-500-ms lfx-ani-delay-500-ms"></div>
+    <script src="node_modules/AniJS/dist/anijs-min.js"></script>
+    <script src="public/minified/index.js" charset="utf-8"></script>
+</body>
+</html>

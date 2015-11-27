@@ -1,0 +1,39 @@
+/**
+ * Retrieves a color value from the $material-colors Sass map
+ * Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/
+ *
+ * @function
+ * @param {string} color-name             - quoted, lower-case, dasherized color
+ *                                          name (e.g. 'pink', 'amber')
+ * @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g.
+ *                                          '200', 'a100')
+ */
+body, html, main {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0; }
+
+.ani-list .ani-list__item {
+  height: 60px;
+  width: 100%;
+  background-color: #2196f3;
+  margin: 0 auto;
+  border-radius: 10px;
+  opacity: 0; }
+
+main {
+  color: #ffffff; }
+
+.lfx-ani-delay-300-ms {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms; }
+
+.lfx-ani-delay-900-ms {
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms; }
+
+
+
+/*# sourceMappingURL=../map/2015-11-27/movelist.css.map */

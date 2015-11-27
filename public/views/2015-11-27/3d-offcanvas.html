@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../public/uncompresed/css/2015-11-27/3d-offcanvas.css">
+</head>
+<body>
+    <main>
+
+        <div class='content'>
+            <button class='toggle'>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+            </button>
+            <section id='home' class='section__open'>
+                <div class='section--title'>HOME</div>
+                <a href='http://codepen.io/phenax/full/zvVdgr' target="_parent _blank" class='red'>Please view in full screen</a>
+                <div class='section--text'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, doloribus tempore facilis eveniet autem, cupiditate nihil, modi tenetur temporibus iure accusantium voluptatum amet sunt quis ut vel. Temporibus, fugit, illo! Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Commodi, doloribus tempore facilis eveniet autem, cupiditate nihil, modi tenetur temporibus iure accusantium voluptatum amet sunt quis ut vel. Temporibus, fugit, illo!
+                </div>
+            </section>
+            <section id='about'>
+                <div class='section--title'>About me</div>
+                <div class='section--text'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquid explicabo quisquam labore, minus inventore officiis consequatur pariatur quos quidem quae similique quam quod voluptates, quasi optio rem, suscipit vitae!
+                </div>
+            </section>
+            <section id='more'>
+                <div class='section--title'>Know more</div>
+                <div class='section--text'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, velit doloremque maxime ullam animi sit molestiae beatae odio soluta eaque ducimus assumenda vel quos harum magnam quam ipsa modi. Doloribus? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Voluptatibus, velit doloremque maxime ullam animi sit molestiae beatae odio soluta eaque ducimus assumenda vel quos harum magnam quam ipsa modi. Doloribus?
+                </div>
+            </section>
+            <section id='contact'>
+                <div class='section--title'>Get in touch</div>
+                <div class='card'>
+                    <img src='https://scontent.fbom1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/11855629_887898261302643_8925632154298589508_n.jpg?oh=53c30047bb67abbc9af038ce7dc48cf5&oe=56DDC210' class='card--face' width='80' height='80' />
+                    <div class='card--name'>Akshay Nair</div>
+                    <div class='card--links'>
+                        <ul>
+                            <li><a href='#'>Github</a></li>
+                            <li><a href='#'>Codepen</a></li>
+                            <li><a href='#'>Facebook</a></li>
+                            <li><a href='#'>Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <button class='home'>Home</button>
+                </li>
+                <li>
+                    <button class='about'>About</button>
+                </li>
+                <li>
+                    <button class='more'>Know more</button>
+                </li>
+                <li>
+                    <button class='contact'>Contact</button>
+                </li>
+            </ul>
+        </nav>
+
+    </main>
+</body>
+<script src="../../../bower_components/jquery/jquery-2.1.4/dist/jquery.min.js"></script>
+<script src="../../../node_modules/AniJS/dist/anijs-min.js"></script>
+<script>
+    (function($) {
+
+        var bring_nav= function() {
+            $('.content').toggleClass('content__move');
+            $('nav').toggleClass('nav__move');
+        };
+
+        var go_to_section= function() {
+            var id= $(this).attr('class');
+            $('section').removeClass('section__open');
+            $('section#'+id).addClass('section__open');
+            bring_nav();
+        };
+
+        $(document).ready(function() {
+            $('.toggle').on('click',bring_nav);
+            $('nav').find('button').on('click',go_to_section);
+        });
+    })(jQuery);
+</script>
+</html>

@@ -1,0 +1,49 @@
+/**
+ * Retrieves a color value from the $material-colors Sass map
+ * Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/
+ *
+ * @function
+ * @param {string} color-name             - quoted, lower-case, dasherized color
+ *                                          name (e.g. 'pink', 'amber')
+ * @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g.
+ *                                          '200', 'a100')
+ */
+.lfx-square-item {
+  height: 60px;
+  width: 120px;
+  background-color: #2196f3;
+  margin: 0 auto;
+  border-radius: 10px;
+  opacity: 0; }
+
+.lfx-ani-delay-3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+.lfx-ani-delay-300-ms {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms; }
+
+.lfx-ani-delay-400-ms {
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms; }
+
+.lfx-ani-delay-500-ms {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms; }
+
+.lfx-ani-delay-600-ms {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms; }
+
+.lfx-ani-delay-750-ms {
+  -webkit-animation-delay: 750ms;
+  animation-delay: 750ms; }
+
+.lfx-ani-duration-500-ms {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms; }
+
+
+
+/*# sourceMappingURL=map/index.css.map */

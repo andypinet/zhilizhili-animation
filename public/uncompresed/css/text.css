@@ -1,0 +1,119 @@
+/**
+ * Retrieves a color value from the $material-colors Sass map
+ * Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/
+ *
+ * @function
+ * @param {string} color-name             - quoted, lower-case, dasherized color
+ *                                          name (e.g. 'pink', 'amber')
+ * @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g.
+ *                                          '200', 'a100')
+ */
+body, html, main {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0; }
+
+@-webkit-keyframes clockwise {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes clockwise {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes counter-clockwise {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@keyframes counter-clockwise {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@-webkit-keyframes rubberBand---reset {
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes rubberBand---reset {
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+.clockwise {
+  -webkit-animation-name: clockwise;
+  animation-name: clockwise; }
+
+.counter-clockwise {
+  -webkit-animation-name: counter-clockwise;
+  animation-name: counter-clockwise; }
+
+.rubber-brand---reset {
+  -webkit-animation-name: rubberBand---reset;
+  animation-name: rubberBand---reset;
+  -webkit-animation-delay: 2000ms;
+  animation-delay: 2000ms; }
+
+main {
+  background-color: #f44336;
+  color: #ffffff;
+  opacity: 0; }
+
+.element-box {
+  opacity: 0; }
+  .element-box--show {
+    opacity: 1; }
+
+html .section-1-element-2 {
+  text-align: center; }
+html .section-1-element-4 {
+  text-align: center; }
+html .section-1-element-5 {
+  text-align: right; }
+html .audio-btn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%; }
+
+.lfx-ani-delay-300-ms {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms; }
+
+.lfx-ani-delay-600-ms {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms; }
+
+.lfx-ani-duration-1500-ms {
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms; }
+
+.lfx-ani-iteration-count-1 {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+.lfx-ani-iteration-count-infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+
+
+/*# sourceMappingURL=map/text.css.map */

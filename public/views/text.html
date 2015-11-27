@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../../node_modules/anicollection/dist/anicollection.css">
+    <link rel="stylesheet" href="../../public/uncompresed/css/text.css">
+    <title>Document</title>
+</head>
+<body>
+<main id="main" data-anijs="if: touchstart, do: fadeIn animated">
+    <div class="element-box element-box--show audio-btn" data-anijs="if: touchstart, on: #main, do: clockwise lfx-ani-duration-1500-ms lfx-ani-iteration-count-infinite animated">
+        hihi
+    </div>
+    <div class="element-box section-1-element-1" data-anijs="if: touchstart, on: #main, do: fadeInLeft animated">
+        会展主办方的
+    </div>
+    <div class="element-box element-box--show section-1-element-2"
+         data-anijs="if: touchstart, on: #main, do: zoomIn animated;
+                     if: animationend, on: .section-1-element-1, do: rubberBand animated;">
+        100个死法
+    </div>
+    <div class="element-box section-1-element-3" data-anijs="if: touchstart, on: #main, do: fadeInLeft lfx-ani-delay-300-ms animated">
+        从左到右
+    </div>
+    <div class="element-box section-1-element-4" data-anijs="if: touchstart, on: #main, do: fadeInUp lfx-ani-delay-600-ms animated">
+        从下到上
+    </div>
+    <div class="element-box section-1-element-5" data-anijs="if: touchstart, on: #main, do: fadeInRight lfx-ani-delay-300-ms animated">
+        从右到左
+    </div>
+</main>
+<script src="../../node_modules/AniJS/dist/anijs-min.js"></script>
+<script src="../../public/minified/index.js" charset="utf-8"></script>
+</body>
+</html>

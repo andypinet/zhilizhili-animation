@@ -1,0 +1,12 @@
+{
+  "name": "zhilizhili-animation",
+  "version": "0.0.0",
+  "authors": [
+    "lbc"
+  ],
+  "description": "zhilizhili animation",
+  "license": "",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
